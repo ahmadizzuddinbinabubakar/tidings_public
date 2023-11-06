@@ -71,6 +71,7 @@ func doProcess() {
 
 	result := getRssListFromDb()
 
+	//todo: this is O(n^2). change to O(n + m)
 	for _, rec := range result.Data {
 
 		url := rec.Attributes.URL
