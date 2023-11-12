@@ -5,10 +5,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: white;
 }
 
-/* .description {
+.description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -17,23 +16,23 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
-} */
+}
 
-/* .description a {
+.description a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-} */
+}
 
-/* .description p {
+.description p {
   position: relative;
   margin: 0;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
-} */
+}
 
 .code {
   font-weight: 700;
@@ -73,7 +72,7 @@
   max-width: 30ch;
 }
 
-/* .center {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,11 +102,11 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
-} */
+}
 
-/* .logo {
+.logo {
   position: relative;
-} */
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
