@@ -42,7 +42,46 @@ const NewsCard = () => {
         category: "sports",
         image:
           "https://i.ytimg.com/vi/nWJVa6FI9t4/maxresdefault.jpg",
-        link: "https://www.youtube.com/watch?v=nWJVa6FI9t4",
+        link: "https://www.youtube.com/playlist?list=PLzf_fTyARq45rEWdDG6jxEoWqdo_OzWBy",
+        pubdate: "2023-11-11T18:25:43.511Z",
+        source: "Youtube",
+        sourcelogo: "https://www.google.com/s2/favicons?sz=16&domain_url=youtube.com",
+    },
+    {
+      title: "Joe Biden falls again",
+      category: "headlines",
+      image:
+        "https://heavy.com/wp-content/uploads/2021/03/joe-biden-trips-falls.jpg?quality=65&strip=all&w=1350",
+      link: "https://heavy.com/news/joe-biden-trips-tripped-falls-stumbles-video/",
+      pubdate: "2023-11-13T07:25:43.511Z",
+      source: "Heavy",
+      sourcelogo: "https://www.google.com/s2/favicons?sz=16&domain_url=heavy.com/",
+    },
+    {
+        title: "Money printer goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+        category: "business",
+        image: "https://i.ytimg.com/vi/O1hCLBTD5RM/maxresdefault.jpg",
+        link: "https://www.forbes.com/sites/williammeehan/2020/10/21/can-the-federal-reserve-print-money-forever-or-how-continuing-to-print-money-to-support-deficit-spending-may-end-badly-with-chinas-help/?sh=2437689958d4",
+        pubdate: "2023-11-13T08:25:43.511Z",
+        source: "Forbes",
+        sourcelogo: "https://www.google.com/s2/favicons?sz=16&domain_url=forbes.com",
+    },
+    {
+        title: "Kessoku Band to headline Glastonbury Festival",
+        category: "culture",
+        image:
+          "http://img.youtube.com/vi/p010N38zFrA/maxresdefault.jpg",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        pubdate: "2023-11-12T12:25:43.511Z",
+        source: "NME",
+        sourcelogo: "https://www.google.com/s2/favicons?sz=16&domain_url=nme.com",
+    },
+    {
+        title: "Thomas Muller goes reverse Michael Jackson",
+        category: "sports",
+        image:
+          "https://i.ytimg.com/vi/nWJVa6FI9t4/maxresdefault.jpg",
+        link: "https://www.youtube.com/playlist?list=PLzf_fTyARq45rEWdDG6jxEoWqdo_OzWBy",
         pubdate: "2023-11-11T18:25:43.511Z",
         source: "Youtube",
         sourcelogo: "https://www.google.com/s2/favicons?sz=16&domain_url=youtube.com",

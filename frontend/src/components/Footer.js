@@ -7,6 +7,8 @@ const Footer = () => (
         // margin-top: 80px;
         padding: 10px 30px;
         color: grey;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        background-color: white;
       }
       .copyright {
         margin-bottom: 20px;
