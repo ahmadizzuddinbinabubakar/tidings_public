@@ -19,7 +19,6 @@ const Header = () => (
         top: 0px;
         z-index: 1;
         background-color: white;
-        font-family: 'Helvetica', 'Arial', sans-serif;
       }
       @media (max-width: 600px) {
         .header-wrapper {

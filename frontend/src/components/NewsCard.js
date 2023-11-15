@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {timeSince} from './../Utils.js';
 import { Stack } from 'react-bootstrap';
 
-//todo: dynamic resize
+//todo: dynamic resize. card is not responsive
 //todo: get from db
 const NewsCard = () => {
   const newsItem = [
@@ -116,6 +116,7 @@ const NewsCard = () => {
                       border-radius: 25px;
                       overflow: hidden;
                       position: relative;
+                      z-index: -1;
                     }           
                     .cardContent {
                       position: absolute;

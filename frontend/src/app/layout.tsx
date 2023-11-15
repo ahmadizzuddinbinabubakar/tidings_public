@@ -18,26 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <header className="header"><Header/></header>
-      <body className={inter.className}>        
-        {children}        
+      <body className={inter.className}>  
+        <header className="header"><Header/></header>     
+        {children} 
+        <footer className="footer"><Footer/></footer>      
       </body>
-      <footer className="footer"><Footer/></footer>
-      <style>{`
-      .header {
-        position: fixed;
-        top: 0px;
-        left:0;
-        right:0;
-      }
-      .footer {
-        position:fixed;
-        bottom:0;
-        left:0;
-        right:0;
-        height:35px;
-      }
-    `}</style>
     </html>
   )
 }
