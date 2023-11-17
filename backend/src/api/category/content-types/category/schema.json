@@ -28,14 +28,18 @@
       "mappedBy": "category"
     },
     "defaultImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "defaultImage_link": {
+      "type": "string"
     }
   }
 }

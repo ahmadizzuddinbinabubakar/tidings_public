@@ -1,7 +1,7 @@
 
 //get time since published
-export function timeSince(date) {
-    var seconds = Math.floor((new Date() - date) / 1000);
+export function timeSince(date: Date) {
+    var seconds = Math.floor((new Date().valueOf() - date.valueOf()) / 1000);
   
     var interval = seconds / 31536000;
   
@@ -25,4 +25,17 @@ export function timeSince(date) {
       return Math.floor(interval) + "m ago";
     }
     return Math.floor(seconds) + "s ago";
+  }
+
+  //handler for unsupported image type
+  export function imageHandler(img: string, defImg: string) {
+    
+    if(img) {
+      if(img.endsWith(".svg")) {
+        return 'http://localhost:1337'+defImg;
+      }
+      return img;
+    } else {
+      return 'http://localhost:1337'+defImg;
+    }
   }
