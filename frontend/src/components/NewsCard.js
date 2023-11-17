@@ -1,25 +1,23 @@
 // 'use server'
 'use client'
-import Link from 'next/link';
 import Image from 'next/image';
 import {timeSince, imageHandler} from '../utils/Utils.tsx';
 import { Stack } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
-import { fetchDataHeadlines } from './../utils/api/StrapiAPI';
+import { fetchNewsAxios } from './../utils/api/StrapiAPI';
 
-//todo: filter category by page
 //todo: pagination
 //todo: infinite scroll + lazy loading
 //todo: dynamic resize. card is not responsive
-const NewsCard = () => {
+const NewsCard = (pageinfo) => {
 
   try {
-
+    // console.log('category: ' +pageinfo.category);
     const [data, setData] = useState([]);
 
     useEffect(() => {
       const fetchDataFromApi = async () => {
-        const result = await fetchDataHeadlines();
+      const result = await fetchNewsAxios(pageinfo.category);
         if (result) {
           setData(result);
         }

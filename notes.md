@@ -11,3 +11,9 @@ npm run dev
 go webscraper:
 go build WebScraperService
 go run WebScraperService
+
+
+wishlist:
+hamburger menu - search (Meilisearch?), feedback, about
+buy me a coffee
+mailist

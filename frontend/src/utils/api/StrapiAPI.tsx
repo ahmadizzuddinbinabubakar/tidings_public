@@ -11,7 +11,7 @@ export const fetchData = async () => {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const data = await response.json();
-    // console.log(data);
+
     return data;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -20,12 +20,15 @@ export const fetchData = async () => {
 };
 
 const fetcher = (url: string) => axios.get(url).then((res) => res.data);
+export const fetchNewsAxios = async (category: string) => {
 
-export const fetchDataHeadlines = async () => {
   try {
-    const response = await axios.get(`${API_URL}articles?populate=*&filters[category][name][$eq]=headlines&sort=pubDate:desc`);
+    var query = `${API_URL}articles?populate=*&filters[category][name][$eq]=` +category.toLowerCase()+ `&sort=pubDate:desc`;
+    const response = await axios.get(query);
+
     return response.data;
   } catch (error) {
     return <div> Error loading data </div>;
 ``}
 };
+

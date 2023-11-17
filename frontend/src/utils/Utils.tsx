@@ -31,7 +31,7 @@ export function timeSince(date: Date) {
   export function imageHandler(img: string, defImg: string) {
     
     if(img) {
-      if(img.endsWith(".svg")) {
+      if(img.endsWith(".svg") || !img.startsWith("http")) {
         return 'http://localhost:1337'+defImg;
       }
       return img;
