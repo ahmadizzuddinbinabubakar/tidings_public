@@ -20,13 +20,31 @@ const Logo = () => (
         display: flex;
         flex-wrap: wrap;
       }
+      .logo {
+        max-width: 7.5vh;
+        max-height: 7.5vh;
+      }
       .logo-text {
-        font-size: 22px;
+        font-size: 2.5vh;
         color: #999999;
         font-weight: 300;
         padding: 5px 2px;
         margin: 0 10px;
         text-decoration: none;
+      }
+      @media screen and (max-width: 1024px) {
+        .logo {
+          max-width: 3.5vh;
+          max-height: 3.5vh;
+        }
+        .logo-text {
+          font-size: 2vh;
+          color: #999999;
+          font-weight: 300;
+          padding: 0.5vh 0.25vh;
+          // margin: 0 10vh;
+          text-decoration: none;
+        }
       }
       `}</style>
     </Stack>

@@ -39,3 +39,13 @@ export function timeSince(date: Date) {
       return 'http://localhost:1337'+defImg;
     }
   }
+
+  export function titleTruncate(title: string) {
+
+    if(title.length > 100) {
+      return title.substring(0, 60) + "...";
+    } else {
+      return title;
+    }
+    
+  }
