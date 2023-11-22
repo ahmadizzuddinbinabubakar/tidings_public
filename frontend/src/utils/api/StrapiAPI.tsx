@@ -20,15 +20,15 @@ export const fetchData = async () => {
 };
 
 const fetcher = (url: string) => axios.get(url).then((res) => res.data);
-export const fetchNewsAxios = async (category: string) => {
+export const fetchNewsAxios = async (category: string, start: number, limit: number) => {
 
   try {
-    var query = `${API_URL}articles?populate=*&filters[category][name][$eq]=` +category.toLowerCase()+ `&sort=pubDate:desc`;
+    var query = `${API_URL}articles?populate=*&filters[category][name][$eq]=` +category.toLowerCase()+ `&pagination[start]=` +start+ `&pagination[limit]=` +limit+ `&sort=pubDate:desc`;
     const response = await axios.get(query);
-
-    return response.data;
+    return response.data.data;
   } catch (error) {
-    return <div> Error loading data </div>;
+    return <div style={{ color: 'moccasin'}}> Error loading data </div>;
 ``}
 };
+
 
