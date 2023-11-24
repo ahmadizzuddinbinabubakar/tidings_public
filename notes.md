@@ -16,6 +16,8 @@ go run WebScraperService
 
 
 wishlist:
-hamburger menu - search (Meilisearch?), feedback, about
+search
+feedback
+about
 buy me a coffee
 mailist

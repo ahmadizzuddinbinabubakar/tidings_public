@@ -63,15 +63,12 @@ const NewsCard = (pageinfo) => {
                         overflow: hidden;
                         position: relative;
                         z-index: -1;
-
                         max-width: 800px;
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                         transition: transform 0.3s ease-in-out;
-
                         &:hover {
                           transform: scale(1.05);
                         }
-
                         @media screen and (max-width: 1024px) {
                           width: 90vw;
                         }

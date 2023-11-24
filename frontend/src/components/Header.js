@@ -64,8 +64,6 @@ const Header = () => {
         padding-right: 1vh;
       }      
       .bar {
-        // width: 25px;
-        // height: 3px;
         width: 2.75vh;
         height: 0.25vh;
         background-color: grey;
@@ -103,31 +101,6 @@ const Header = () => {
     `}</style>
     </nav>
   );
-
-  // <div className="header-wrapper">
-    
-  //   <Logo />
-  //   {/* <Menu /> */}
-
-  //   <style>{`
-  //     .header-wrapper {
-  //       padding: 10px;
-  //       display: flex;
-  //       justify-content: space-between;
-  //       align-items: center;
-  //       position: sticky;
-  //       top: 0px;
-  //       z-index: 1;
-  //       background-color: white;
-  //     }
-  //     @media (max-width: 600px) {
-  //       .header-wrapper {
-  //         display: block;
-  //         text-align: center;
-  //       }
-  //     }
-  //   `}</style>
-  // </div>
 };
 
 export default Header;
