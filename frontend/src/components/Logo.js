@@ -26,7 +26,7 @@ const Logo = () => (
       }
       .logo-text {
         font-size: 2.5vh;
-        color: #999999;
+        color: grey;
         font-weight: 300;
         padding: 5px 2px;
         margin: 0 10px;

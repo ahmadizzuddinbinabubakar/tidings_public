@@ -9,7 +9,4 @@
 .main h1 {
   color: grey;
   font-size: 10vw;
-  @media screen and (max-width: 450px) {
-    padding-top: 7vh;
-  }
 }
