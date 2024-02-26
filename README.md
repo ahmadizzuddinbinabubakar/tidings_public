@@ -1,7 +1,9 @@
 # TIDINGS - AN RSS AGGREGATOR
-A fullstack RSS news aggregator
+A fullstack RSS news aggregator. Using Next.js on frontend, Strapi on backend and a simple webscraper built in Go.
 <br>
 <br>
+<br>
+
 # TO RUN
 backend: 
 - cd /tidings/backend 
@@ -17,3 +19,8 @@ frontend:
 webscraper: 
 - go build WebScraperService 
 - go run WebScraperService
+<br>
+<br>
+
+# SAMPLE SCREENS
+
